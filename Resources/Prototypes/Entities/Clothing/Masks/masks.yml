@@ -375,7 +375,6 @@
     - WhitelistChameleon
   - type: HideLayerClothing
     slots:
-    - Hair
     - Snout
     hideOnToggle: true
   - type: Armor
@@ -419,7 +418,6 @@
     - WhitelistChameleon
   - type: HideLayerClothing
     slots:
-    - Hair
     - Snout
     hideOnToggle: true
   - type: FlashImmunity
