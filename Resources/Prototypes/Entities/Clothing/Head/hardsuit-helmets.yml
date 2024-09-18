@@ -351,9 +351,9 @@
   description: A heavily armored helmet designed for work in special operations. Property of Gorlex Marauders.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/Head/Hardsuits/syndicate.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/syndicate.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/Head/Hardsuits/syndicate.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/syndicate.rsi
   - type: PointLight
     color: green
   - type: PressureProtection
@@ -403,9 +403,9 @@
   description: An elite version of the blood-red hardsuit's helmet, with improved armor and fireproofing. Property of Gorlex Marauders.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/Head/Hardsuits/syndieelite.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/syndieelite.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/Head/Hardsuits/syndieelite.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/syndieelite.rsi
   - type: PointLight
     color: red
   - type: PressureProtection
@@ -434,9 +434,9 @@
   description: A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/Head/Hardsuits/syndiecommander.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/Head/Hardsuits/syndiecommander.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
   - type: PointLight
     color: green
   - type: PressureProtection
@@ -460,9 +460,9 @@
   description: Made of compressed red matter, this helmet was designed in the Tau chromosphere facility.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/Head/Hardsuits/cybersun.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/cybersun.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/Head/Hardsuits/cybersun.rsi #backmen resprite
+    sprite: Clothing/Head/Hardsuits/cybersun.rsi
   - type: PointLight # Corvax-Resprite
     color: red
   - type: PressureProtection
