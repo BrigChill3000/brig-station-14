@@ -1,0 +1,7 @@
+- type: department
+  id: CentComSpecialists
+  name: department-CentComSpecialists
+  description: department-CentCom-description
+  color: "#35a41e"
+  roles:
+  - BlueShield
