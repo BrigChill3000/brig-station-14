@@ -1,2 +1,2 @@
 job-name-fugitive = беглец
-job-name-blueshield = офицер "Синий Щит"
+job-name-blueshield = офицер "Синий Щит" # Brig-Edit
