@@ -30,7 +30,7 @@
 - type: entity
   parent: [ClothingEyesGlassesSecurity, ShowMedicalIcons]
   id: ClothingEyesGlassesBlueShield
-  name: очки Синего Щита
+  name: очки офицера "Синий Щит"
   description: Улучшенный солнце защитные очки с охранной системой HUD.
   components:
   - type: Sprite
@@ -45,7 +45,7 @@
 - type: entity
   parent: [ClothingEyesGlassesSecurity, ShowMedicalIcons]
   id: ClothingEyeslensesBlueShield
-  name: линзы Синего Щита
+  name: линзы офицера "Синий Щит"
   description: Новейшие линзы с исскуственным интелектом, способным вычеслять яркость окружения и затемнять линзы, так же с внедремной системой HUD охраны.
   components:
   - type: Sprite
