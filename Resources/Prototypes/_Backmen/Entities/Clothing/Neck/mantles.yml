@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckMantleBlueShield
-  name: мантия Синего Щита
+  name: мантия офицера "Синий Щит"
   description: Мантия из меха синих львов, довольно красивый, но совершенно не держит тепло.
   components:
   - type: Sprite
