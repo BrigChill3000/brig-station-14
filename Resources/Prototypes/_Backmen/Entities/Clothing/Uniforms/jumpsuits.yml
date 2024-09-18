@@ -874,7 +874,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingJumpsuitBlueShield
-  name: jumpsuit officer blueshield
+  name: комбинезон офицера "Синий Щит"
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Uniforms/jumpsuit/bluesuit.rsi
@@ -884,7 +884,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformBlueShield
-  name: uniform officer blueshield
+  name: униформа офицера "Синий Щит"
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Uniforms/jumpsuit/bluesuit-alt.rsi
