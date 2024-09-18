@@ -792,7 +792,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitMVDInspector
-  name: Inspector uniform
+  name: inspector uniform
   description: Inspector uniform. Better than any stripes will emphasize your importance and rank.
   components:
     - type: Sprite
@@ -874,7 +874,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingJumpsuitBlueShield
-  name: комбинезон Синего Щита
+  name: jumpsuit officer blueshield
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Uniforms/jumpsuit/bluesuit.rsi
@@ -884,7 +884,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformBlueShield
-  name: одежда Синего Щита
+  name: uniform officer blueshield
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Uniforms/jumpsuit/bluesuit-alt.rsi
