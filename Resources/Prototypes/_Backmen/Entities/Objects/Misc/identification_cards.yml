@@ -553,7 +553,7 @@
 - type: entity
   parent: IDCardStandard
   id: BlueShieldIDCard
-  name: Blue Shield ID Card
+  name: BlueShield ID Card
   components:
     - type: Sprite
       layers:
