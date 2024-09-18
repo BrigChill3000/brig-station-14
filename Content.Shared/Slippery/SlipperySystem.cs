@@ -128,8 +128,6 @@ public sealed class SlipperySystem : EntitySystem
 
         _stun.TryParalyze(other, TimeSpan.FromSeconds(component.ParalyzeTime), true);
 
-        RaiseLocalEvent(other, new ParkSlipEvent(uid));
-
         // Preventing from playing the slip sound when you are already knocked down.
         if (playSound)
         {
@@ -164,8 +162,3 @@ public record struct SlipCausingAttemptEvent (bool Cancelled);
 /// <param name="Slipped">The entity being slipped</param>
 [ByRefEvent]
 public readonly record struct SlipEvent(EntityUid Slipped);
-
-/// <summary>
-///     This is an event raised on an entity after they slip. Duh.
-/// </summary>
-public readonly record struct ParkSlipEvent(EntityUid Tripper);
