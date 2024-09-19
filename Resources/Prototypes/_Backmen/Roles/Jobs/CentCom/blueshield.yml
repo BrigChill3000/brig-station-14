@@ -58,7 +58,6 @@
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltCommand
     shoes: ClothingShoesBootsCombat
-    back: ClothingBackpackSatchelLeather
     belt: ClothingBeltSecurityCentComSecurity
     pocket1: WeaponPistolUCS
     pocket2: CombatKnifeSpetsnaz

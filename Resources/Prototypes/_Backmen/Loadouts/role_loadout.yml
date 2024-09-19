@@ -25,6 +25,8 @@
 - type: roleLoadout
   id: JobBlueShield
   groups:
+  - GroupTankHarness
+  - BlueShieldBackpack # Brig-Edit
   - ClothingUniformJumpsuitBlueShield
   - ClothingHeadHatBlueShield
   - ClothingOuterBlueShield
