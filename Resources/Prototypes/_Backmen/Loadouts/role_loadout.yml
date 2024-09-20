@@ -26,10 +26,11 @@
   id: JobBlueShield
   groups:
   - GroupTankHarness
-  - BlueShieldBackpack # Brig-Edit
+  - BlueShieldBackpack # Brig
   - ClothingUniformJumpsuitBlueShield
   - ClothingHeadHatBlueShield
   - ClothingOuterBlueShield
+  - BlueShieldBelt # Brig
   - EyeBlueShield
   - ClothingNeckBlueShield
   - Trinkets
