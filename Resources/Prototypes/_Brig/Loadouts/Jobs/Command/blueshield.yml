@@ -21,29 +21,24 @@
     back: ClothingBackpackDuffelBlueShield
 
 # Outer clothing
-#- type: loadout
-#  id: BlueShieldOuterClothing
-#  equipment:
-#    outerClothing: ClothingOuterArmorBlueShield
+- type: loadout
+  id: BlueShieldOuterClothing
+  equipment:
+    outerClothing: ClothingOuterArmorBlueShield
 
-#- type: loadout
-#  id: BlueShieldArmorSlim
-#  equipment:
-#    outerClothing: ClothingOuterArmorBlueShieldSlim
+- type: loadout
+  id: BlueShieldArmorSlim
+  equipment:
+    outerClothing: ClothingOuterArmorBlueShieldSlim
 
 # Shoes
-#- type: loadout
-#  id: JackBootsBlueShield
-#  equipment:
-#    shoes: ClothingShoesBootsJackBlueShieldFilled
+- type: loadout
+  id: JackBootsBlueShield
+  equipment:
+    shoes: ClothingShoesBootsJackBlueShieldFilled
 
 # Belt
-#- type: loadout
-#  id: UniversalSlimBelt
-#  equipment:
-#    belt: ClothingBeltUniversalSlimFilled
-
-#- type: loadout
-#  id: BlueShieldWebbing
-#  equipment:
-#    belt: ClothingBeltBlueShieldWebbingFilled
+- type: loadout
+  id: BlueShieldWebbing
+  equipment:
+    belt: ClothingBeltBlueShieldWebbingFilled
