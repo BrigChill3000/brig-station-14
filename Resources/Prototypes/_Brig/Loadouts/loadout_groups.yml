@@ -15,3 +15,10 @@
   - BlueShieldBackpack
   - BlueShieldSatchel
   - BlueShieldDuffel
+
+- type: loadoutGroup
+  id: BlueShieldBelt
+  name: loadout-group-belt
+  loadouts:
+  - SecurityCentComBelt
+  - BlueShieldWebbing
