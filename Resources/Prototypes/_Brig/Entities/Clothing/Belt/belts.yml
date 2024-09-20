@@ -1,0 +1,43 @@
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltMiningWebbing
+  name: mining webbing
+  description: Universal unloading system for work in space.
+  components:
+  - type: Sprite
+    sprite: _Brig/Clothing/Belt/miningwebbing.rsi
+  - type: Clothing
+    sprite: _Brig/Clothing/Belt/miningwebbing.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltBlueShieldWebbing
+  name: blueshield webbing
+  description: Unique and versatile chest rig, can hold security gear.
+  components:
+  - type: Sprite
+    sprite: _Brig/Clothing/Belt/blueshieldwebbing.rsi
+  - type: Clothing
+    sprite: _Brig/Clothing/Belt/blueshieldwebbing.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltBlueShieldWebbingAlt
+  name: blueshield webbing
+  description: Unique and versatile chest rig, can hold security gear.
+  components:
+  - type: Sprite
+    sprite: _Brig/Clothing/Belt/blueshieldwebbingalt.rsi
+  - type: Clothing
+    sprite: _Brig/Clothing/Belt/blueshieldwebbingalt.rsi
+
+- type: entity
+  parent: ClothingBeltStorageBase
+  id: ClothingBeltCentComWebbing
+  name: centcom webbing
+  description: Unique and versatile chest rig, can hold security gear.
+  components:
+  - type: Sprite
+    sprite: _Brig/Clothing/Belt/centcomwebbing.rsi
+  - type: Clothing
+    sprite: _Brig/Clothing/Belt/centcomwebbing.rsi
