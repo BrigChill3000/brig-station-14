@@ -5,9 +5,10 @@
   components:
   - type: StorageFill
     contents:
-    - id: GrenadeFlashBang
-    - id: TearGasGrenade
+    - id: WeaponDominatorNT
     - id: Stunbaton
+    - id: GrenadeFlashBang
+    - id: GrenadeFlashBang
     - id: Handcuffs
     - id: Handcuffs
 
