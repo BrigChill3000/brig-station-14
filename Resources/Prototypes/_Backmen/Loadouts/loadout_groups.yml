@@ -32,6 +32,10 @@
   id: ClothingUniformJumpsuitBlueShield
   name: loadout-group-blueshield-jumpsuit
   loadouts:
+  - BlueShieldJumpsuit # Brig
+  - BlueShieldJumpskirt # Brig
+  - BlueShieldJumpsuitTurtleneck # Brig
+  - BlueShieldlJumpskirtTurtleneck # Brig
   - ClothingJumpsuitBlueShield
   - ClothingUniformBlueShield
   - ClothingSkirtBlueShield
@@ -54,6 +58,7 @@
   - ClothingHeadHatBeretBlueShield
   - ClothingHeadHatBlueShieldCap
   - ClothingHeadHatUshankaBlueShield
+  - SWATHelmet # Brig
   - ClothingHeadHelmetEGov
   - ClothingHeadHatBeretBlueshields # cats
 
@@ -61,6 +66,8 @@
   id: ClothingOuterBlueShield
   name: loadout-group-BlueShield-outer
   loadouts:
+  - BlueShieldOuterClothing # Brig
+  - BlueShieldArmorSlim # Brig
   - ClothingOuterNavyVest
   - ClothingOuterXenonautenLight
   - ClothingOuterCoatArmorBlueShield
