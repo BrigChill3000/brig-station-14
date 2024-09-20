@@ -418,7 +418,7 @@
 
 - type: entity
   parent: ClothingOuterHardsuitSecurityRed
-  id: ClothingOuterHardsuitBlueShield
+  id: ClothingOuterHardsuitBlueShieldBackmen
   name: боевой скафандр офицера "Синий Щит"
   description: Модицифированный военный скафандр разведки ОПЗ, имеет литые тяжелые бронеплиты и гидро-экзоскелет, в разы увеличивает физические способности, а так же морской камуфляж, который позволяет прятаться в море.
   components:
