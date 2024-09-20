@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadHelmetHardsuitERTOperativeAlpha1
+  id: ClothingHeadHelmetHardsuitBlueShield
+  name: шлем скафандра офицера "Синий Щит"
+  description: Модифицированный шлем скафандра разведчиков ОПЗ, специализирован для ведения разведки на дальних расстояниях, оснащен устройством ночного видиния.
+  components:
+  - type: Sprite
+    sprite: Backmen/Clothing/Head/Hardsuits/bluehardhelmet.rsi
+  - type: Clothing
+    sprite: Backmen/Clothing/Head/Hardsuits/bluehardhelmet.rsi
