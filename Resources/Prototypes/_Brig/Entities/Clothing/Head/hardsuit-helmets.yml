@@ -5,6 +5,6 @@
   description: Модифицированный шлем скафандра разведчиков ОПЗ, специализирован для ведения разведки на дальних расстояниях, оснащен устройством ночного видиния.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/Head/Hardsuits/bluehardhelmet.rsi
+    sprite: _Brig/Clothing/Head/Hardsuits/blueshield.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/Head/Hardsuits/bluehardhelmet.rsi
+    sprite: _Brig/Clothing/Head/Hardsuits/blueshield.rsi
