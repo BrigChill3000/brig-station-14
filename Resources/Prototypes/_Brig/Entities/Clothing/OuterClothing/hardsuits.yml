@@ -5,9 +5,9 @@
   description: Модицифированный военный скафандр разведки ОПЗ, имеет литые тяжелые бронеплиты и гидро-экзоскелет, в разы увеличивает физические способности, а так же морской камуфляж, который позволяет прятаться в море.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi
+    sprite: _Brig/Clothing/OuterClothing/Hardsuits/blueshield.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi
+    sprite: _Brig/Clothing/OuterClothing/Hardsuits/blueshield.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBlueShield
   - type: ClothingSpeedModifier
