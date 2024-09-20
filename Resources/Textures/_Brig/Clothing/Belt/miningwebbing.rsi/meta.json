@@ -1,22 +1,18 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "create by Leonne (@692406873290440704)",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/pull/62168, edited by Arsik08",
   "size": {
     "x": 32,
     "y": 32
   },
   "states": [
     {
-      "name": "equipped-MASK",
-      "directions": 4
-    },
-    {
-      "name": "equipped-MASK-reptilian",
-      "directions": 4
-    },
-    {
       "name": "icon"
+    },
+    {
+      "name": "equipped-BELT",
+      "directions": 4
     },
     {
       "name": "inhand-left",
