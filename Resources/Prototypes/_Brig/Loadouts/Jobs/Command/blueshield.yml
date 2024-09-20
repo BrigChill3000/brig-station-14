@@ -1,3 +1,24 @@
+# Jumpsuit
+- type: loadout
+  id: BlueShieldJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueShield
+
+- type: loadout
+  id: BlueShieldJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBlueShield
+
+- type: loadout
+  id: BlueShieldJumpsuitTurtleneck
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueShieldTurtleneck
+
+- type: loadout
+  id: BlueShieldlJumpskirtTurtleneck
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtBlueShieldTurtleneck
+
 # Head
 - type: loadout
   id: SWATHelmet
