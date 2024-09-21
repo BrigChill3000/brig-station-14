@@ -112,7 +112,6 @@
       job: BKCCSecGavna
     - type: Access
       tags:
-        - CCSecurity
         - CentralCommand
       groups:
         - AllAccess
