@@ -1095,7 +1095,7 @@
 
 - type: loadoutGroup #Backmen
   id: SecurityPocket
-  name: loadout-group-pocket
+  name: loadout-group-security-pocket
   loadouts:
   - WeaponPistolMk58
   - WeaponPistolG22
@@ -1179,7 +1179,7 @@
 # Medical
 - type: loadoutGroup
   id: ChiefMedicalOfficerHead
-  name: loadout-group-chief-head
+  name: loadout-group-head
   minLimit: 0
   loadouts:
   - ChiefMedicalOfficerBeret
