@@ -141,9 +141,10 @@
         - state: default
         - state: idueg
     - type: Access
+      tags:
+        - CentralCommand
       groups:
         - AllAccess
-        - CentCom
     - type: IdCard
       jobTitle: Представитель ОПЗ
 
