@@ -92,7 +92,6 @@
       job: BKCCCargo
     - type: Access
       tags:
-        - CCCargo
         - CentralCommand
         - Cargo
         - Maintenance
