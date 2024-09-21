@@ -19,10 +19,7 @@
       department: CentCom
       time: 1
   access:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
-    - CCOfficer
   accessGroups:
     - AllAccess
   special:
