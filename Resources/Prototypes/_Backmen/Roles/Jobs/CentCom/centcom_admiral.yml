@@ -27,9 +27,10 @@
       time: 9000   #cats
     - !type:AgeRequirement
       requiredAge: 21 # cats
+  access:
+    - CentralCommand
   accessGroups:
     - AllAccess
-    - CentCom
     - MTFLeader
   special:
     - !type:AddImplantSpecial
