@@ -308,10 +308,11 @@
     fullName: Оперативник СпецВойск
     jobIcon: JobIconDeathSquadron
   - type: Access
+    tags:
+    - CentralCommand
     groups:
     - AllAccess
     - MTFLeader
-    - CentCom
 
 - type: entity
   parent: CentcomIDCard
@@ -330,10 +331,11 @@
     fullName: Коммандер СпецВойск
     jobIcon: JobIconDeathSquadron
   - type: Access
+    tags:
+    - CentralCommand
     groups:
     - AllAccess
     - MTFLeader
-    - CentCom
 
 - type: entity
   parent: CentcomIDCard
@@ -352,10 +354,11 @@
     jobTitle: Офицер Специальный Операций
     jobIcon: JobIconNanotrasenOSO
   - type: Access
+    tags:
+    - CentralCommand
     groups:
     - AllAccess
     - MTFLeader
-    - CentCom
 
 - type: entity
   noSpawn: true
@@ -388,8 +391,6 @@
     - AllAccess
     - MTFLeader
     tags:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
 
 - type: entity
@@ -413,8 +414,6 @@
     - AllAccess
     - MTFSrg
     tags:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
 
 - type: entity
@@ -436,8 +435,6 @@
     - AllAccess
     - MTFPvtSecurity
     tags:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
 
 - type: entity
@@ -457,8 +454,6 @@
     - AllAccess
     - MTFCplMedic
     tags:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
 
 - type: entity
@@ -478,8 +473,6 @@
     - AllAccess
     - MTFCplEngineer
     tags:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
 
 - type: entity
@@ -499,8 +492,6 @@
     - AllAccess
     - MTFPvtJunitor
     tags:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
 
 - type: entity
@@ -524,8 +515,6 @@
     - AllAccess
     - MTFLeader
     tags:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
 
 - type: entity
@@ -545,10 +534,11 @@
     fullName: Legionnaire
     jobIcon: JobIconDeathSquadron
   - type: Access
+    tags:
+    - CentralCommand
     groups:
     - MTFLeader
     - AllAccess
-    - CentCom
 
 - type: entity
   parent: IDCardStandard
