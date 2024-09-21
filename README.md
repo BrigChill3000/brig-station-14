@@ -10,7 +10,7 @@
   [![Wiki](https://img.shields.io/badge/Wiki-Explore%20Our%20Wiki-blue?style=for-the-badge)](https://wiki.backmen.ru/)
   [![Steam](https://img.shields.io/badge/Steam-Play%20on%20Steam-blue?style=for-the-badge)](https://store.steampowered.com/app/1255460/Space_Station_14/)
   [![Client](https://img.shields.io/badge/Download-Client-blue?style=for-the-badge)](https://spacestation14.io/about/nightlies/)
-  [![GitHub](https://img.shields.io/github/stars/fospas/space-cats-14?style=for-the-badge&logo=github)](https://github.com/BrigChill3000/brig-station-14)
+  [![GitHub](https://img.shields.io/github/stars/BrigChill3000/brig-station-14?style=for-the-badge&logo=github)](https://github.com/BrigChill3000/brig-station-14)
 
 </div>
 
