@@ -159,9 +159,10 @@
         - state: default
         - state: iduegofficer
     - type: Access
+      tags:
+        - CentralCommand
       groups:
         - AllAccess
-        - CentCom
     - type: IdCard
       jobTitle: Офицер ОПЗ
 
