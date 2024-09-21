@@ -12,8 +12,10 @@
         - state: door_remotescreencolour
           color: "#22871a"
     - type: Access
+      tags:
+        - CentralCommand
       groups:
-        - CentCom
+        - AllAcces
 
 - type: entity
   parent: DoorRemoteDefault
@@ -29,9 +31,10 @@
         - state: door_remotescreencolour
           color: "#22871a"
     - type: Access
+      tags:
+        - CentralCommand
       groups:
         - AllAccess
-        - CentCom
         - MTFLeader
 
 # AI door remotes

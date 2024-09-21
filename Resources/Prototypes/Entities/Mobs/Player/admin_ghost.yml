@@ -29,7 +29,6 @@
   - type: Access
     groups:
     - AllAccess
-    - CentCom
     - MTFLeader
     tags:
     - NuclearOperative
