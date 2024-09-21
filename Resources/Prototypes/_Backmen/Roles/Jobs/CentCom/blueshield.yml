@@ -43,7 +43,8 @@
   accessGroups:
     - AllAccessWithOutHeads
   access:
-    - CCOfficer
+    - CentralCommand
+    - Captain
   #start-backmen: currency
   minBankBalance: 900
   maxBankBalance: 1600

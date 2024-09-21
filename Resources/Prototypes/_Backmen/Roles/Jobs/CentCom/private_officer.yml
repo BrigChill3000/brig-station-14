@@ -25,7 +25,6 @@
       time: 1200   #cats
   access:
     - CentralCommand
-    - CCSecurity
     - Security
     - Brig
     - Maintenance
@@ -100,7 +99,6 @@
       job: BKCCSecOfficer
     - type: Access
       tags:
-        - CCSecurity
         - CentralCommand
         - Security
         - Brig
