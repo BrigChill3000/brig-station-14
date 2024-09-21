@@ -100,9 +100,6 @@
       job: BKCCOfficial
     - type: Access
       tags:
-        - CCCargo
-        - CCSecurity
         - CentralCommand
-        - CCOfficer
       groups:
         - AllAccess
