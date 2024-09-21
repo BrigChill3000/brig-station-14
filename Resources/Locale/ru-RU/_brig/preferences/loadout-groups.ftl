@@ -1,5 +1,6 @@
 # Base
 loadout-group-head = Голова
+loadout-group-ears = Уши
 loadout-group-jumpsuit = Комбинезон
 loadout-group-neck = Шея
 loadout-group-mask = Маска
