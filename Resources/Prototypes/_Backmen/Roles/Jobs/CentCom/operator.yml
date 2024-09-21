@@ -79,9 +79,6 @@
       job: BKCCOperator
     - type: Access
       tags:
-        - CCCargo
-        - CCSecurity
         - CentralCommand
-        - CCOfficer
       groups:
         - AllAccess
