@@ -91,7 +91,7 @@
     - type: PresetIdCard
       job: BKCCAdmiral
     - type: Access
-      access:
+      tags:
         - CentralCommand
       groups:
         - AllAccess
