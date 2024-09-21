@@ -7,4 +7,4 @@ loadout-group-gloves = Перчатки
 loadout-group-outerclothing = Верхняя одежда
 loadout-group-shoes = Обувь
 loadout-group-belt = Пояс
-loadout-group-pda = КПК
+loadout-group-id = ID-карта
