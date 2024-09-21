@@ -15,7 +15,7 @@
       tags:
         - CentralCommand
       groups:
-        - AllAcces
+        - AllAccess
 
 - type: entity
   parent: DoorRemoteDefault
