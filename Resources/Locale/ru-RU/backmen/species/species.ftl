@@ -1,6 +1,6 @@
 ## Species Names
 
-species-name-foxes = Вульпканик
+species-name-foxes = Вульпканин
 species-name-oni = Они
 species-name-felinid = Фелинид
 species-name-ArachneClassic = Арахна классическая
