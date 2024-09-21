@@ -95,5 +95,4 @@
         - CentralCommand
       groups:
         - AllAccess
-        - CentCom
         - MTFLeader
