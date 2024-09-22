@@ -39,7 +39,7 @@
   description: Это может быть использовано для различных важных функций. Все еще находится на стадии разработки.
   components:
   - type: AccessReader
-    access: [[ "CCOfficer" ]]
+    access: [[ "HeadOfSecurity" ]]
   - type: CommunicationsConsole
     title: comms-console-announcement-title-centcom
     sound: /Audio/Misc/notice1.ogg

@@ -51,4 +51,4 @@
     stateDoorOpen: egov_open
     stateDoorClosed: egov_door
   - type: AccessReader
-    access: [ [ "CCOfficer" ] ]
+    access: [ [ "Captain" ] ]

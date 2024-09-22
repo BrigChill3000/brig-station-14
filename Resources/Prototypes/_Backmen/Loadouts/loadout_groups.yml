@@ -3,14 +3,14 @@
 # Cargo
 - type: loadoutGroup
   id: BKCCCargoJumpsuit
-  name: loadout-group-captain-jumpsuit
+  name: loadout-group-jumpsuit
   loadouts:
   - BKCCCargoJumpsuit
   - BKCCCargoJumpskirtCargo
 
 - type: loadoutGroup
   id: BKCCCargoNeck
-  name: loadout-group-captain-neck
+  name: loadout-group-neck
   minLimit: 0
   loadouts:
   - BKCCCargoCloak
@@ -19,7 +19,7 @@
 
 - type: loadoutGroup
   id: BKCCCargoBackpack
-  name: loadout-group-captain-backpack
+  name: loadout-group-backpack
   loadouts:
   - BKCCCargoBackpack
   - BKCCCargoSatchel
@@ -30,7 +30,7 @@
 # BlueShield
 - type: loadoutGroup
   id: ClothingUniformJumpsuitBlueShield
-  name: loadout-group-blueshield-jumpsuit
+  name: loadout-group-jumpsuit
   loadouts:
   - ClothingJumpsuitBlueShield
   - ClothingUniformBlueShield
@@ -40,7 +40,7 @@
 
 - type: loadoutGroup
   id: ClothingNeckBlueShield
-  name: loadout-group-captain-neck
+  name: loadout-group-neck
   minLimit: 0
   loadouts:
   - ClothingNeckCloakBlueshields
@@ -48,7 +48,7 @@
 
 - type: loadoutGroup
   id: ClothingHeadHatBlueShield
-  name: loadout-group-BlueShield-hat
+  name: loadout-group-head
   minLimit: 0
   loadouts:
   - ClothingHeadHatBeretBlueShield
@@ -60,7 +60,7 @@
 
 - type: loadoutGroup
   id: ClothingOuterBlueShield
-  name: loadout-group-BlueShield-outer
+  name: loadout-group-outerclothing
   loadouts:
   - BlueShieldOuterClothing # Brig
   - BlueShieldArmorSlim # Brig
@@ -73,7 +73,7 @@
 
 - type: loadoutGroup
   id: EyeBlueShield
-  name: loadout-group-BlueShield-eyes
+  name: loadout-group-eyes
   minLimit: 0
   loadouts:
   - ClothingEyesGlassesBlueShield
@@ -108,7 +108,7 @@
 # Brigmedic
 - type: loadoutGroup
   id: ClothingUniformJumpsuitBrigmedic
-  name: loadout-group-brigmedic-jumpsuit
+  name: loadout-group-jumpsuit
   loadouts:
   - ClothingUniformJumpsuitBrigmedic
   - ClothingUniformJumpskirtBrigmedic
@@ -116,7 +116,7 @@
 
 - type: loadoutGroup
   id: ClothingBackpackBrigmedic
-  name: loadout-group-brigmedic-backpack
+  name: loadout-group-backpack
   loadouts:
   - ClothingBackpackBrigmedic
   - ClothingBackpackDuffelBrigmedic
@@ -124,7 +124,7 @@
 
 - type: loadoutGroup
   id: ClothingHeadHatBrigmedic
-  name: loadout-group-brigmedic-hat
+  name: loadout-group-head
   minLimit: 0
   loadouts:
   - ClothingHeadHatBeretBrigmedic
@@ -133,7 +133,7 @@
 
 - type: loadoutGroup
   id: ClothingOuterBrigmedic
-  name: loadout-group-brigmedic-outer
+  name: loadout-group-outerclothing
   loadouts:
   - ClothingOuterVestArmorMedSec
   - ClothingOuterCoatAMG
@@ -142,14 +142,14 @@
 
 - type: loadoutGroup
   id: ClothingEarBrigmedic
-  name: loadout-group-brigmedic-ear
+  name: loadout-group-ears
   loadouts:
   - ClothingHeadsetBrigmedic
   - ClothingHeadsetAltBrigmedic
 
 - type: loadoutGroup
   id: ClothingMaskBrigmedic
-  name: loadout-group-brigmedic-mask
+  name: loadout-group-mask
   minLimit: 0
   loadouts:
   - ClothingMaskBreathMedicalSecurity
