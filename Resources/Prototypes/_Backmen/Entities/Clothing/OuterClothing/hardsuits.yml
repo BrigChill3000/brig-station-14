@@ -427,7 +427,7 @@
   - type: Clothing
     sprite: Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHelmetHardsuitBlueShield
+    clothingPrototype: ClothingHeadHelmetHardsuitBlueShieldBackmen
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8

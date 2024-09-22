@@ -32,10 +32,6 @@
   id: ClothingUniformJumpsuitBlueShield
   name: loadout-group-blueshield-jumpsuit
   loadouts:
-  - BlueShieldJumpsuit # Brig
-  - BlueShieldJumpskirt # Brig
-  - BlueShieldJumpsuitTurtleneck # Brig
-  - BlueShieldlJumpskirtTurtleneck # Brig
   - ClothingJumpsuitBlueShield
   - ClothingUniformBlueShield
   - ClothingSkirtBlueShield
