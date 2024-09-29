@@ -1,0 +1,1 @@
+department-CentComSpecialists = Специалисты Центрального Командования

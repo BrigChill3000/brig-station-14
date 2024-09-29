@@ -125,20 +125,20 @@
 - type: entity
   parent: AirlockBlueShield
   id: AirlockBlueShieldLocked
-  suffix: Blue Shield, Locked
+  suffix: BlueShield, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCCOfficer ]
+      board: [ DoorElectronicsBlueShield ]
 
 - type: entity
   parent: AirlockBlueShieldGlass
   id: AirlockBlueShieldGlassLocked
-  suffix: Blue Shield, Locked
+  suffix: BlueShield, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCCOfficer ]
+      board: [ DoorElectronicsBlueShield ]
 
 #Windoor CC
 - type: entity

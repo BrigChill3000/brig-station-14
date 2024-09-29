@@ -7,10 +7,6 @@
     - type: IdCardConsole
       accessLevels:
         - CentralCommand
-        - CCCargo
-        - CCOfficer
-        - CCSecurity
-        - CCAdmiral
       privilegedIdSlot:
         name: id-card-console-privileged-id
         ejectSound: /Audio/Machines/id_swipe.ogg
@@ -108,7 +104,7 @@
     energy: 1.6
     color: "#1f8c28"
   - type: AccessReader
-    access: [["CCOfficer"]]
+    access: [["HeadOfSecurity"]]
 
 - type: entity
   parent: BaseItem

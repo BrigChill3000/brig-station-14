@@ -203,8 +203,6 @@
   - type: HideLayerClothing
     slots:
     - Snout
-  - type: DropOnSlip
-    chance: 5
 
 - type: entity
   parent: ClothingMaskClownBase
@@ -375,7 +373,6 @@
     - WhitelistChameleon
   - type: HideLayerClothing
     slots:
-    - Hair
     - Snout
     hideOnToggle: true
   - type: Armor
@@ -419,7 +416,6 @@
     - WhitelistChameleon
   - type: HideLayerClothing
     slots:
-    - Hair
     - Snout
     hideOnToggle: true
   - type: FlashImmunity
