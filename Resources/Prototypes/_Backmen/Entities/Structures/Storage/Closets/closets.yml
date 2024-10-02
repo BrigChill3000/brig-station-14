@@ -29,7 +29,7 @@
 - type: entity
   id: LockerBlueShield
   parent: LockerBase
-  name: шкаф Синего Щита
+  name: шкаф офицера "Синий Щит"
   components:
   - type: Sprite
     netsync: false
@@ -51,4 +51,4 @@
     stateDoorOpen: egov_open
     stateDoorClosed: egov_door
   - type: AccessReader
-    access: [ [ "CCOfficer" ] ]
+    access: [ [ "Captain" ] ]

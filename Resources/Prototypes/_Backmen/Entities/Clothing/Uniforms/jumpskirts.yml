@@ -106,7 +106,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingSkirtBlueShield
-  name: юбка Синего Щита
+  name: юбка-комбинезон офицера "Синий Щит"
   components:
   - type: Sprite
     sprite: Backmen/Clothing/Uniforms/Jumpskirt/blueskirt.rsi
