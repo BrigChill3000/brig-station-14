@@ -11,6 +11,9 @@ loadout-group-brigmedic-mask = Маска бригмедика
 
 # Misc
 loadout-group-medals = Медали
+loadout-group-werx = Нижняя одежда
+loadout-group-niz = Трусы
+loadout-group-socks = Носки
 
 loadout-group-blueshield-jumpsuit = Одежда
 loadout-group-BlueShield-hat = Головной убор

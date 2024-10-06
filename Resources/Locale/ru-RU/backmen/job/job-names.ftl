@@ -1,2 +1,2 @@
 job-name-fugitive = беглец
-job-name-blueshield = синий щит
+job-name-blueshield = офицер "Синий Щит" 

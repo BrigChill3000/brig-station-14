@@ -29,7 +29,6 @@
       requiredAge: 21 # cats
   access:
     - CentralCommand
-    - CCCargo
     - Cargo
     - Maintenance
     - Salvage
@@ -93,7 +92,6 @@
       job: BKCCCargo
     - type: Access
       tags:
-        - CCCargo
         - CentralCommand
         - Cargo
         - Maintenance
