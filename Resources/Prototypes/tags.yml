@@ -627,9 +627,6 @@
   id: ExplosivePassable
 
 - type: Tag
-  id: Extract
-
-- type: Tag
   id: ExoMech
 
 - type: Tag
@@ -863,6 +860,9 @@
 - type: Tag
   id: Igniter
 
+- type: Tag
+  id: IgnoreMelee
+  
 - type: Tag
   id: Ingredient
 
