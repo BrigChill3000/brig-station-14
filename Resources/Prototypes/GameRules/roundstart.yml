@@ -281,7 +281,11 @@
       - !type:NestedSelector
         tableId: CargoGiftsTable
       - !type:NestedSelector
-        tableId: BasicBackmenEventsTable # backmen events
+        tableId: NormalBackmenEventsTable # backmen events
+      - !type:NestedSelector
+        tableId: CalmPestEventsTable
+      - !type:NestedSelector
+        tableId: SpicyPestEventsTable
 
 #- type: entityTable
 #  id: SpaceTrafficControlTable
