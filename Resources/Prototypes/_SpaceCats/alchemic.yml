@@ -88,7 +88,7 @@
     Dylovene:
       amount: 1
   products:
-    Tricordrazine: 1 
+    Tricordrazine: 1
 
 - type: reaction
   id: Dirozine
@@ -120,7 +120,7 @@
           groups:
             Brute: -3
           types:
-            Cellular: 1.5 # При смешивании с фалангимином создаст ноозин. - мощный токсин,вызывающий остановку сердца
+            Cellular: 0.75 # При смешивании с фалангимином создаст ноозин. - мощный токсин,вызывающий остановку сердца
             Heat: -2.5
             Poison: -2
             Bloodloss: -3
@@ -178,7 +178,7 @@
         conditions:
         damage:
           groups:
-            Airloss: 2.5
+            Airloss: 10
 
 - type: reaction
   id: PainPhalanx
@@ -223,3 +223,203 @@
       amount: 1
   products:
    Noozine: 1
+
+# часть два.
+- type: reagent
+  id: Sufentanil #для медиков ОБР,бригмедика и экстренных наборов СБ
+  name: reagent-sufentanil
+  group: Medicine
+  desc: reagent-sufentanil-desc
+  physicalDesc: reagent-psychicalDesc-sufentanil
+  flavor: medicine
+  color: "#dc143c"
+  metabolisms:
+    Medicine:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:MobStateCondition
+          mobstate: Critical
+        damage:
+          groups:
+            Brute: -3
+            Airloss: -4
+          types:
+            Heat: -2
+            Poison: -2
+            Bloodloss: -4
+      - !type:Drunk # побочка
+        boozePower: 5
+      - !type:ModifyBleedAmount
+        amount: -0.25
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 3
+        refresh: false
+      - !type:GenericStatusEffect
+        key: PressureImmunity
+        component: PressureImmunity
+      - !type:GenericStatusEffect
+        key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
+        component: IgnoreSlowOnDamage
+        time: 60 # суфентанил-мощный опиоидный анальгетик. Глушит боль надолго.
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Asphyxiation: 0.5
+            Poison: 1.5
+
+- type: reaction
+  id: Sufentanil
+  impact: Medium
+  minTemp: 380
+  reactants:
+    Epinephrine:
+      amount: 1
+    SpaceDrugs:
+      amount: 1
+    Bicaridine:
+      amount: 1
+    Dirozine:
+      amount: 1
+  products:
+    Sufentanil: 4
+
+- type: reagent
+  id: Tramadol #пиразин,но на механический урон
+  name: reagent-tramadol
+  group: Medicine
+  desc: reagent-tramadol-desc
+  physicalDesc: reagent-psychicalDesc-tramadol
+  flavor: medicine
+  color: "#ffc0cb"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.1
+      effects:
+      - !type:HealthChange
+        conditions:
+        damage:
+          groups:
+            Brute: -0.5
+          types:
+            Bloodloss: -0.5
+      - !type:Drunk # побочка
+        boozePower: 5
+      - !type:GenericStatusEffect
+        key: SeeingRainbows
+        component: SeeingRainbows
+        type: Add
+        time: 3
+        refresh: false
+      - !type:GenericStatusEffect
+        key: Adrenaline # убирает боль(позволит эффективнее сражаться.)
+        component: IgnoreSlowOnDamage
+        time: 2.5 # трамадол должен убирать боль и медленно лечить мех. урон.
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentThreshold
+          min: 10
+        damage:
+          types:
+            Asphyxiation: 0.5
+            Poison: 1
+      - !type:ModifyBleedAmount
+        amount: -0.25
+
+- type: reaction
+  id: Tramadol #долгое,но эффективное лечение
+  impact: Medium
+  minTemp: 450
+  reactants:
+    SpaceDrugs:
+      amount: 1
+    Bicaridine:
+      amount: 1
+  products:
+    Tramadol: 4
+
+- type: reagent
+  id: Nanomachines #лечат долго и медленно.
+  name: reagent-nanomachines
+  group: Medicine
+  desc: reagent-nanomachines-desc
+  physicalDesc: reagent-psychicalDesc-nanomachines
+  flavor: metallic
+  color: "#f80000"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.001
+      effects:
+      - !type:HealthChange
+        conditions:
+        damage:
+          groups:
+            Brute: -0.3
+            Toxin: -0.2
+          types:
+            Heat: -0.2
+            Bloodloss: 0.2
+      - !type:ModifyBleedAmount
+        amount: -0.5
+
+- type: entity
+  name: продвинутый экстренный иньектор
+  parent: EmergencyMedipen
+  id: EmergencyMedipenSecurity
+  description: Содержит дозу суфентанила и дирозина,способную поднять из критического состояния и частично закрыть раны. Не забудьте обратиться к квалифицированному врачу после использования.
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Medical/medipen.rsi
+    layers:
+    - state: medipen
+      map: ["enum.SolutionContainerLayers.Fill"]
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: medipen_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 30
+        reagents:
+        - ReagentId: Sufentanil
+          Quantity: 10
+        - ReagentId: Dirozine
+          Quantity: 20
+
+- type: cargoProduct
+  id: MedicalSuppliess
+  icon:
+    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    state: firstaid
+  product: CrateEmergencyMedipenSecurity
+  cost: 2000
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: entity
+  name: аптечка продвинутых иньекторов #пополнение припасов СБ. Одна такая будет в шкафу БМ
+  id: MedkitEmergencyMedipenSecurity
+  suffix: иньекторы суфентанила
+  parent: MedkitCombat
+  components:
+  - type: StorageFill
+    contents:
+      - id: EmergencyMedipenSecurity
+        amount: 8
+
+- type: entity
+  id: CrateEmergencyMedipenSecurity
+  parent: CrateMedical
+  name: medical supplies crate
+  description: 8 иньекторов суфентанила.
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedkitEmergencyMedipenSecurity

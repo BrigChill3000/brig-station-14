@@ -11,7 +11,7 @@
           mapNameTemplate: '{0} Packed {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'VG'
+            prefixCreator: 'SC'
         - type: StationJobs
           availableJobs:
             #service

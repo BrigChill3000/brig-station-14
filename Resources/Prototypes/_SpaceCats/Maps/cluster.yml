@@ -13,7 +13,7 @@
           mapNameTemplate: '{0} Cluster Station {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: '14'
+            prefixCreator: 'SC'
         - type: StationJobs
           availableJobs:
             #service

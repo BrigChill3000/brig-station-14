@@ -74,6 +74,7 @@ namespace Content.IntegrationTests.Tests
             "Marathon",
             "MeteorArena",
             //start-spacecats
+            "PearlSC",
             "BagelSC",
             "BoxSC",
             "ClusterSC",
