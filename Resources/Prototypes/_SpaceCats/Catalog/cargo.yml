@@ -18,3 +18,23 @@
   - type: StorageFill
     contents:
       - id: CloakerHardsuit
+
+- type: cargoProduct
+  id: MedkitsCrate
+  icon:
+    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    state: firstaid
+  product: MedkitsCrate
+  cost: 5000
+  category: cargoproduct-category-name-medical
+  group: market
+
+- type: cargoProduct
+  id: MedicalSuppliess
+  icon:
+    sprite: Objects/Specific/Medical/firstaidkits.rsi
+    state: firstaid
+  product: CrateEmergencyMedipenSecurity
+  cost: 2000
+  category: cargoproduct-category-name-medical
+  group: market

@@ -21,10 +21,12 @@
         amount: 2
       - id: Ointment
         amount: 1
-      - id: Bloodpack
-        amount: 1
       - id: Gauze
-      - id: EmergencyMedipen
+      - id: EmergencyMedipenSecurity
+        amount: 2
+      - id: SyringeSaline
+      - id: SyringeEphedrine
+      - id: Cautery
 
 - type: entity
   parent: ClothingBeltStorageBase
@@ -49,7 +51,9 @@
         amount: 2
       - id: Ointment
         amount: 1
-      - id: Bloodpack
-        amount: 1
       - id: Gauze
-      - id: EmergencyMedipen #You never know what people are going to latejoin into
+      - id: EmergencyMedipenSecurity
+        amount: 2
+      - id: SyringeSaline
+      - id: SyringeEphedrine
+      - id: Cautery
