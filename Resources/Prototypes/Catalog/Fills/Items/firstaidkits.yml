@@ -97,6 +97,8 @@
       - id: SyringeSaline
       - id: ReliableContainerBruteFilled  # cats
       - id: ReliableContainerBurnFilled   # cats
+      - id: BruteAutoInjector
+      - id: BurnAutoInjector
 
 - type: entity
   id: StimkitFilled

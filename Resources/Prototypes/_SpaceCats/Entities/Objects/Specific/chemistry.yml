@@ -69,7 +69,7 @@
   - type: SolutionContainerManager
     solutions:
       beaker:
-        maxVol: 10
+        maxVol: 100
         reagents:
         - ReagentId: Bicaridine
           Quantity: 75
