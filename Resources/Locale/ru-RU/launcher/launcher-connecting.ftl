@@ -1,7 +1,7 @@
 ### Connecting dialog when you start up the game
 
-connecting-title = Space Cats and 1984
-connecting-exit = Выйти
+connecting-title = Brig Station
+connecting-exit = Сьебаться
 connecting-retry = Повторить
 connecting-reconnect = Переподключиться
 connecting-copy = Скопировать сообщение
@@ -11,7 +11,7 @@ connecting-in-progress = Подключение к серверу...
 connecting-disconnected = Отключён от сервера:
 connecting-tip = Гоооооол!
 connecting-window-tip = Совет { $numberTip }
-connecting-version = версия 1984
+connecting-version = версия 52
 connecting-fail-reason =
     Не удалось подключиться к серверу:
     { $reason }
