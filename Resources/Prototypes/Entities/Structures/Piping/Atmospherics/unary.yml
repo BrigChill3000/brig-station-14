@@ -110,6 +110,7 @@
         - GasScrubber
         - Unstackable
     - type: Sprite
+      noRot: true
       drawdepth: FloorObjects
       sprite: Structures/Piping/Atmospherics/scrubber.rsi
       layers:

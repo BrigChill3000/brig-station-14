@@ -38,6 +38,25 @@
 
 - type: entity
   parent: BasePlushie
+  id: PlushieFirefly
+  name: плюшевая Лаура Игнатова
+  description: Явно не любит когда ее тискают
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Misc/Firefly.rsi
+    state: firefly_toy
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/Backmen/Voice/Felinid/cat_hiss1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Backmen/Voice/Felinid/cat_hiss2.ogg
+  - type: MeleeWeapon
+    soundHit:
+      path: /Audio/Backmen/Voice/Felinid/cat_growl1.ogg
+
+- type: entity
+  parent: BasePlushie
   id: PlushieFejet
   name: плюшевая Сабина Колонтарёва
   description: Пахнет рисом с едва заметным запахом трифторида хлора. На рукаве правой руки пришита бирка с надписью "<Не вижу здесь никакого бога> - Юрий Гагарин".
@@ -54,3 +73,9 @@
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Animals/fox_squeak.ogg
+
+- type: loadout
+  id: PlushieFirefly
+  storage:
+    back:
+    - PlushieFirefly
