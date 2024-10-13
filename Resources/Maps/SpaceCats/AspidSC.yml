@@ -443,6 +443,7 @@ entities:
             5305: 8,-36
             5306: 4,-36
             5307: 5,-36
+            5668: -1,11
         - node:
             color: '#52B4E996'
             id: BotGreyscale
@@ -60724,7 +60725,7 @@ entities:
       pos: 31.5,35.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -63690.016
+      secondsUntilStateChange: -63748.61
       state: Closing
     - type: Firelock
       emergencyCloseCooldown: 1086.7989152
@@ -105016,6 +105017,13 @@ entities:
     components:
     - type: Transform
       pos: 6.4334226,-24.182034
+      parent: 2
+- proto: SpaceCatsVendingMachineSponsor
+  entities:
+  - uid: 13876
+    components:
+    - type: Transform
+      pos: -0.5,11.5
       parent: 2
 - proto: SpaceHeater
   entities:

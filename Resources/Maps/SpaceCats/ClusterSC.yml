@@ -6498,7 +6498,7 @@ entities:
       pos: -17.5,32.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -11090.917
+      secondsUntilStateChange: -11199.845
       state: Opening
     - type: DeviceLinkSink
       invokeCounter: 2
@@ -6875,8 +6875,6 @@ entities:
     - type: Transform
       pos: 3.5,-6.5
       parent: 2
-- proto: AirlockHydroponicsLocked
-  entities:
   - uid: 218
     components:
     - type: Transform
@@ -64267,11 +64265,6 @@ entities:
     - type: Transform
       pos: -31.5,0.5
       parent: 2
-  - uid: 9682
-    components:
-    - type: Transform
-      pos: 6.5,12.5
-      parent: 2
   - uid: 9683
     components:
     - type: Transform
@@ -68709,6 +68702,13 @@ entities:
       parent: 2
     - type: Stack
       count: 2000
+- proto: SpaceCatsVendingMachineSponsor
+  entities:
+  - uid: 9682
+    components:
+    - type: Transform
+      pos: 6.5,12.5
+      parent: 2
 - proto: SpaceVillainArcadeFilled
   entities:
   - uid: 10413

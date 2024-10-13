@@ -2846,7 +2846,6 @@ entities:
             1021: 25,16
             1022: 26,16
             1023: 27,16
-            1024: 33,-2
             1025: 35,-2
             1097: -8,-15
             1098: -8,-14
@@ -6262,8 +6261,6 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
-      - 6415
-      - 6418
       - 6417
       - 6416
       - 342
@@ -6379,8 +6376,6 @@ entities:
       - 6440
       - 6442
       - 6443
-      - 6418
-      - 6415
       - 6416
       - 6417
       - 6506
@@ -7865,11 +7860,6 @@ entities:
     components:
     - type: Transform
       pos: 19.5,11.5
-      parent: 2
-  - uid: 192
-    components:
-    - type: Transform
-      pos: 33.5,-1.5
       parent: 2
   - uid: 193
     components:
@@ -40924,8 +40914,6 @@ entities:
       parent: 2
     - type: DeviceList
       devices:
-      - 6415
-      - 6418
       - 6417
       - 6416
       - 342
@@ -41006,8 +40994,6 @@ entities:
       - 6440
       - 6442
       - 6443
-      - 6418
-      - 6415
       - 6416
       - 6417
       - 8240
@@ -41189,8 +41175,6 @@ entities:
       - 6440
       - 6442
       - 6443
-      - 6418
-      - 6415
       - 6416
       - 6417
       - 8240
@@ -41733,12 +41717,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 54.5,-1.5
       parent: 2
-  - uid: 6415
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 33.5,-2.5
-      parent: 2
   - uid: 6416
     components:
     - type: Transform
@@ -41749,11 +41727,6 @@ entities:
     components:
     - type: Transform
       pos: 35.5,-0.5
-      parent: 2
-  - uid: 6418
-    components:
-    - type: Transform
-      pos: 33.5,-0.5
       parent: 2
   - uid: 6419
     components:
@@ -41946,7 +41919,7 @@ entities:
       pos: 25.5,28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -7482.739
+      secondsUntilStateChange: -7569.126
       state: Closing
   - uid: 6452
     components:
@@ -71313,6 +71286,13 @@ entities:
     - type: Transform
       pos: 120.5,-17.5
       parent: 2
+- proto: SpaceCatsVendingMachineSponsor
+  entities:
+  - uid: 192
+    components:
+    - type: Transform
+      pos: 33.5,-2.5
+      parent: 2
 - proto: SpaceVillainArcade
   entities:
   - uid: 11064
@@ -83388,6 +83368,11 @@ entities:
       parent: 2
 - proto: WallSolid
   entities:
+  - uid: 6415
+    components:
+    - type: Transform
+      pos: 33.5,-1.5
+      parent: 2
   - uid: 13126
     components:
     - type: Transform

@@ -20,8 +20,6 @@
     - id: AstroNavCartridge
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: AstroNavCartridge
-    - id: PlushieLolyItsMyLife
-      prob: 0.33
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -365,8 +363,6 @@
     - id: PrinterDocFlatpack # Corvax-Printer
     - id: WantedListCartridge
     - id: ClothingHeadHatCapHoS # Corvax-SecFashion
-    - id: PlushieAcolyte16 # пасхалко
-      prob: 0.66
     - id: ClothingOuterCoatHoSGreatcoat # Corvax-Resprite
     - id: BookBusido # Corvax-Books
 

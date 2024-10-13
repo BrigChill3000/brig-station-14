@@ -12,3 +12,23 @@
       whitelist:
         tags:
           - NukeOpsUplink
+
+- type: listing
+  id: UplinkChemicalImplant
+  name: uplink-stimulants-implant-name
+  description: uplink-stimulants-implant-desc
+  productEntity: StimulantsImplanter
+  icon: { sprite: /Textures/Objects/Specific/Chemistry/syringe.rsi, state: syringe_base0 }
+  cost:
+    Telecrystal: 8
+  categories:
+  - UplinkImplants
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - NukeOpsUplink
+    - !type:BuyerWhitelistCondition
+      blacklist:
+        components:
+          - SurplusBundle

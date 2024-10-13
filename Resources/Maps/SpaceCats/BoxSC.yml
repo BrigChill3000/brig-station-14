@@ -717,6 +717,7 @@ entities:
             3639: 60,-51
             3640: 59,-51
             3642: 57,-51
+            3700: 23,-11
         - node:
             color: '#FFFFFFFF'
             id: BotGreyscale
@@ -11573,7 +11574,7 @@ entities:
       pos: 24.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -9623.123
+      secondsUntilStateChange: -9821.47
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15488,15 +15489,15 @@ entities:
       - Cloth
 - proto: BackgammonBoard
   entities:
-  - uid: 937
-    components:
-    - type: Transform
-      pos: 24.02721,-8.402973
-      parent: 2
   - uid: 938
     components:
     - type: Transform
       pos: 63.5,-7.5
+      parent: 2
+  - uid: 10509
+    components:
+    - type: Transform
+      pos: 24.032154,-7.5720243
       parent: 2
 - proto: BackmenVendingMachineChang
   entities:
@@ -63602,6 +63603,12 @@ entities:
       parent: 2
 - proto: ChairWood
   entities:
+  - uid: 937
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 23.511322,-8.402683
+      parent: 2
   - uid: 10468
     components:
     - type: Transform
@@ -63827,45 +63834,39 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,-7.5
       parent: 2
-  - uid: 10508
-    components:
-    - type: Transform
-      pos: 24.5,-7.5
-      parent: 2
-  - uid: 10509
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 25.5,-8.5
-      parent: 2
-  - uid: 10510
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 23.5,-9.5
-      parent: 2
   - uid: 10511
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 19.5,-7.5
       parent: 2
-  - uid: 10512
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 22.5,-8.5
-      parent: 2
   - uid: 10513
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 24.5,-9.5
+      pos: 24.439087,-8.402384
       parent: 2
   - uid: 10514
     components:
     - type: Transform
-      pos: 23.5,-7.5
+      pos: 23.522419,-6.485718
+      parent: 2
+  - uid: 22816
+    components:
+    - type: Transform
+      pos: 24.439087,-6.506551
+      parent: 2
+  - uid: 22817
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 25.490486,-7.3888087
+      parent: 2
+  - uid: 27513
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 22.469654,-7.367975
       parent: 2
 - proto: CheapLighter
   entities:
@@ -142053,6 +142054,13 @@ entities:
     - type: Transform
       pos: -57.5,-61.5
       parent: 2
+- proto: SpaceCatsVendingMachineSponsor
+  entities:
+  - uid: 10510
+    components:
+    - type: Transform
+      pos: 23.5,-10.5
+      parent: 2
 - proto: SpaceVillainArcadeComputerCircuitboard
   entities:
   - uid: 22113
@@ -146485,15 +146493,17 @@ entities:
       parent: 2
 - proto: TableCarpet
   entities:
-  - uid: 22816
+  - uid: 10508
     components:
     - type: Transform
-      pos: 24.5,-8.5
+      rot: 1.5707963267948966 rad
+      pos: 23.5,-7.5
       parent: 2
-  - uid: 22817
+  - uid: 10512
     components:
     - type: Transform
-      pos: 23.5,-8.5
+      rot: 1.5707963267948966 rad
+      pos: 24.5,-7.5
       parent: 2
   - uid: 22818
     components:

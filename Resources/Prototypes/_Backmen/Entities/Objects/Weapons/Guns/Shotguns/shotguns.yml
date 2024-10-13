@@ -200,13 +200,19 @@
   - type: Clothing
     sprite: Backmen/Objects/Weapons/Gunsx64/Shotguns/guard-17/tiny.rsi
   - type: BallisticAmmoProvider
-    capacity: 12
-  - type: Wieldable
+    capacity: 8
+    soundRack:
+      path: /Audio/Weapons/Guns64/Shotguns/trenchgun_pump.ogg
+    soundInsert:
+      path: /Audio/Weapons/Guns64/Shotguns/shotgun_cmb_insert.ogg
+  - type: PumpAction
+    sound: /Audio/Weapons/Guns64/Shotguns/trenchgun_pump.ogg
   - type: UseDelay
-    delay: 0.4
-  - type: GunRequiresWield
+    delay: 0.8
   - type: Gun
-    fireRate: 2
-    cameraRecoilScalar: 1
+    fireRate: 1
+    cameraRecoilScalar: 2
     soundGunshot:
       collection: GuardianShot
+  - type: Wieldable
+  - type: GunRequiresWield

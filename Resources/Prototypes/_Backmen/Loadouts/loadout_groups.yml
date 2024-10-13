@@ -39,17 +39,26 @@
   - ClothingUniformJumpskirtBlueshields # cats
 
 - type: loadoutGroup
+  id: BlueShieldBackpack
+  name: loadout-group-blueshield-backpack
+  loadouts:
+  - BlueshieldBackpack
+  - BlueshieldSatchel
+  - BlueshieldDuffel
+
+- type: loadoutGroup
   id: ClothingNeckBlueShield
   name: loadout-group-neck
-  minLimit: 0
+  minLimit: 1
   loadouts:
   - ClothingNeckCloakBlueshields
   - ClothingNeckMantleBlueShield
+  - BlueshieldCloak
 
 - type: loadoutGroup
   id: ClothingHeadHatBlueShield
   name: loadout-group-head
-  minLimit: 0
+  minLimit: 1
   loadouts:
   - ClothingHeadHatBeretBlueShield
   - ClothingHeadHatBlueShieldCap

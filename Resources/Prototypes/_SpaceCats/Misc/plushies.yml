@@ -73,9 +73,3 @@
   - type: MeleeWeapon
     soundHit:
       path: /Audio/Animals/fox_squeak.ogg
-
-- type: loadout
-  id: PlushieFirefly
-  storage:
-    back:
-    - PlushieFirefly

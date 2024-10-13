@@ -209,10 +209,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -607,7 +607,7 @@
     size: Huge
   - type: ClothingSpeedModifier
     walkModifier: 1.0
-    sprintModifier: 0.9
+    sprintModifier: 1.0
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
@@ -628,10 +628,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -685,10 +685,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -888,10 +888,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -925,10 +925,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -963,10 +963,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -1000,10 +1000,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -1041,10 +1041,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -1078,10 +1078,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0
@@ -1139,10 +1139,10 @@
             - PowerCell
             - PowerCellSmall
   - type: EnergyDomeGenerator
-    damageEnergyDraw: 5
+    damageEnergyDraw: 4
     domePrototype: EnergyDomeSmallPink
   - type: PowerCellDraw
-    drawRate: 8
+    drawRate: 0
     useRate: 0
   - type: UseDelay
     delay: 10.0

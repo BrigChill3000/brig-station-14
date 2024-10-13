@@ -38505,8 +38505,8 @@ entities:
           id: docking279217
           localAnchorB: 0.49999997,0
           localAnchorA: -33,-24.5
-          damping: 319.53452
-          stiffness: 2868.1353
+          damping: 319.5352
+          stiffness: 2868.1414
   - uid: 15489
     components:
     - type: MetaData
@@ -70596,7 +70596,7 @@ entities:
       pos: 29.5,23.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -13138.1875
+      secondsUntilStateChange: -13227.5205
       state: Opening
 - proto: CurtainsBlueOpen
   entities:
@@ -70801,7 +70801,7 @@ entities:
       pos: 89.5,16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -130401.914
+      secondsUntilStateChange: -130491.25
       state: Closing
   - uid: 4080
     components:
@@ -127605,6 +127605,13 @@ entities:
     components:
     - type: Transform
       pos: 85.5,31.5
+      parent: 2
+- proto: SpaceCatsVendingMachineSponsor
+  entities:
+  - uid: 18423
+    components:
+    - type: Transform
+      pos: 45.5,-6.5
       parent: 2
 - proto: SpaceHeater
   entities:

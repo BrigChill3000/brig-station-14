@@ -1000,6 +1000,8 @@
       - ClothingEyesGlassesChemical
       - WhiteCane
     dynamicRecipes:
+      - ChemicalImplanterTrigger # cats
+      - ChemicalsImplanter # cats
       - ChemicalPayload
       - CryostasisBeaker
       - BluespaceBeaker
