@@ -39,10 +39,10 @@
   - ClothingUniformJumpskirtBlueshields # cats
 
 - type: loadoutGroup
-  id: BlueShieldBackpack
-  name: loadout-group-blueshield-backpack
+  id: BlueShieldBackpackSpaceCat # Brig-Edit soso
+  name: loadout-group-backpack
   loadouts:
-  - BlueshieldBackpack
+  - BlueshieldBackpack 
   - BlueshieldSatchel
   - BlueshieldDuffel
 
