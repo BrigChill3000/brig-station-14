@@ -44,7 +44,8 @@
   accessGroups:
     - AllAccessWithOutHeads
   access:
-    - CCOfficer
+    - CentralCommand
+    - Captain
   #start-backmen: currency
   minBankBalance: 900
   maxBankBalance: 1600
@@ -58,8 +59,6 @@
     id: BlueShieldPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltCommand
-    shoes: ClothingShoesBootsCombat
-    back: ClothingBlueshieldBackpack # cats
-    belt: ClothingBeltSecurityCentComSecurity
+    shoes: ClothingShoesBootsJackBlueShieldFilled # Brig
     pocket1: WeaponPistolUCS
     pocket2: CombatKnifeSpetsnaz

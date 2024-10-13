@@ -29,6 +29,12 @@
   - type: Access
     groups:
     - AdminAllAccess
+    - AllAccess
+    - MTFLeader
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+    - CentralCommand
   - type: UserInterface
     interfaces:
       enum.SolarControlConsoleUiKey.Key:

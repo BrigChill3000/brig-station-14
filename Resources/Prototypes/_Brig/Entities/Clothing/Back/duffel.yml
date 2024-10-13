@@ -1,0 +1,17 @@
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelBlueShield
+  name: blueshield's duffel bag
+  description: A large duffel bag for holding extra captainly goods.
+  components:
+  - type: Sprite
+    sprite: _Brig/Clothing/Back/Duffels/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpackDuffel
+  id: ClothingBackpackDuffelCentCom
+  name: central command duffel bag
+  description: A duffel bag for storing expensive items of Central Command representatives.
+  components:
+  - type: Sprite
+    sprite: _Brig/Clothing/Back/Duffels/centcom.rsi
