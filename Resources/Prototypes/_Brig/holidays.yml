@@ -1,0 +1,7 @@
+- type: holiday
+  id: BirthdayBrig
+  name: holiday-name-brig-birthday
+  beginDay: 17
+  beginMonth: July
+  endDay: 18
+  endMonth: July

@@ -41,10 +41,6 @@
   - SyndicateAgent
   #syndy: end
   #centcom: start
-  - CCCargo
-  - CCSecurity
-  - CCOfficer
-  - CCAdmiral
   - CentralCommand
   #centcom: end
   #mtf: start

@@ -28,10 +28,7 @@
 #      time: 6000
       time: 2000   #cats
   access:
-    - CCCargo
-    - CCSecurity
     - CentralCommand
-    - CCOfficer
   accessGroups:
     - AllAccess
   special:
@@ -87,9 +84,6 @@
       job: BKCCOperator
     - type: Access
       tags:
-        - CCCargo
-        - CCSecurity
         - CentralCommand
-        - CCOfficer
       groups:
         - AllAccess

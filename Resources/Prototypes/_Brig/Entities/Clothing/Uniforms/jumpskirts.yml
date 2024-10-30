@@ -1,0 +1,11 @@
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBlueShield
+  name: blueshield officer's jumpskirt
+  description: It's a blue jumpskirt with some gold markings denoting the rank of "Captain".
+  components:
+  - type: Sprite
+    sprite: _Brig/Clothing/Uniforms/Jumpskirt/blueshield.rsi
+  - type: Clothing
+    sprite: _Brig/Clothing/Uniforms/Jumpskirt/blueshield.rsi
+

@@ -52,5 +52,8 @@
         - id: ClothingOuterNavyVest
         - id: ClothingOuterXenonautenLight
         - id: ClothingOuterCoatArmorBlueShield
-        - id: ClothingOuterHardsuitBlueShield
         - id: ClothingMaskGasBlueshields # cats
+        - id: ClothingOuterHardsuitBlueShield # Brig-Edit
+          orGroup: HardsuitRandom
+        - id: ClothingOuterHardsuitBlueShieldBackmen
+          orGroup: HardsuitRandom

@@ -434,7 +434,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretBlueShield
-  name: берет Синего Щита
+  name: берет офицера "Синий Щит"
   description: Берет офицеров Синего Щита, внушает чувство лживой безопасности.
   components:
   - type: Sprite
@@ -445,7 +445,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBlueShieldCap
-  name: фуражка Синего Щита
+  name: фуражка офицера "Синий Щит"
   description: Фуражка офицера Синего Щита, имеет эмблему Blue Shield Security.
   components:
   - type: Sprite
@@ -456,7 +456,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatUshankaBlueShield
-  name: ушанка Синего Щита
+  name: ушанка офицера "Синий Щит"
   description: Довольно старая ушанка флота СССП, переделанная под нужды офицеров Синего Щита (Добавлена их эмблема).
   components:
   - type: Sprite

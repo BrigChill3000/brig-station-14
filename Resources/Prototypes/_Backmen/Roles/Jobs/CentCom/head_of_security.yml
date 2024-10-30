@@ -33,7 +33,6 @@
       time: 9000  #cats
   access:
     - CentralCommand
-    - CCSecurity
   accessGroups:
     - AllAccess
   special:
@@ -113,7 +112,6 @@
       job: BKCCSecGavna
     - type: Access
       tags:
-        - CCSecurity
         - CentralCommand
       groups:
         - AllAccess

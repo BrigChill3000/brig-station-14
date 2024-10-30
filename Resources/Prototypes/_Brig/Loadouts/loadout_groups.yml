@@ -1,0 +1,24 @@
+# CentCom
+- type: loadoutGroup
+  id: CentComBackpack
+  name: loadout-group-backpack
+  loadouts:
+  - CentComBackpack
+  - CentComSatchel
+  - CentComDuffel
+
+# BlueShield
+- type: loadoutGroup
+  id: BlueShieldBackpack
+  name: loadout-group-backpack
+  loadouts:
+  - BlueShieldBackpack
+  - BlueShieldSatchel
+  - BlueShieldDuffel
+
+- type: loadoutGroup
+  id: BlueShieldBelt
+  name: loadout-group-belt
+  loadouts:
+  - SecurityCentComBelt
+  - BlueShieldWebbing
