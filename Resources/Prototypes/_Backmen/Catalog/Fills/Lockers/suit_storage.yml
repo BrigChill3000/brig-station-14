@@ -43,7 +43,6 @@
   components:
   - type: StorageFill
     contents:
-        - id: ClothingEyesGlassesBlueShield
         - id: ClothingHeadHatBeretBlueShield
         - id: ClothingHeadHatBlueShieldCap
         - id: ClothingNeckMantleBlueShield

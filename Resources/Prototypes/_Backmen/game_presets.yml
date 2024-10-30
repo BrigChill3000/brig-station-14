@@ -18,7 +18,6 @@
   - bloodsucker
   name: vampires-title
   description: vampires-description
-  minPlayers: 5
   showInVote: true
   rules:
   - VampiresGameRule

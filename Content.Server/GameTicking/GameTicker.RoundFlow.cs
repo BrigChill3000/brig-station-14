@@ -4,6 +4,7 @@ using Content.Server.Discord;
 using Content.Server.GameTicking.Events;
 using Content.Server.Ghost;
 using Content.Server.Maps;
+using Content.Server.Roles;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.GameTicking;
@@ -20,13 +21,13 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
-using System.Text.RegularExpressions;
 
 namespace Content.Server.GameTicking
 {
     public sealed partial class GameTicker
     {
         [Dependency] private readonly DiscordWebhook _discord = default!;
+        [Dependency] private readonly RoleSystem _role = default!;
         [Dependency] private readonly ITaskManager _taskManager = default!;
 
         private static readonly Counter RoundNumberMetric = Metrics.CreateCounter(
@@ -145,6 +146,7 @@ namespace Content.Server.GameTicking
             }
         }
 
+
         /// <summary>
         ///     Loads a new map, allowing systems interested in it to handle loading events.
         ///     In the base game, this is required to be used if you want to load a station.
@@ -190,9 +192,6 @@ namespace Content.Server.GameTicking
                 if (!_playerManager.TryGetSessionById(userId, out _))
                     continue;
 
-                if (_banManager.GetRoleBans(userId) == null)
-                    continue;
-
                 total++;
             }
 
@@ -236,11 +235,7 @@ namespace Content.Server.GameTicking
 #if DEBUG
                 DebugTools.Assert(_userDb.IsLoadComplete(session), $"Player was readied up but didn't have user DB data loaded yet??");
 #endif
-                if (_banManager.GetRoleBans(userId) == null)
-                {
-                    Logger.ErrorS("RoleBans", $"Role bans for player {session} {userId} have not been loaded yet.");
-                    continue;
-                }
+
                 readyPlayers.Add(session);
                 HumanoidCharacterProfile profile;
                 if (_prefsManager.TryGetCachedPreferences(userId, out var preferences))
@@ -340,7 +335,23 @@ namespace Content.Server.GameTicking
 
             RunLevel = GameRunLevel.PostRound;
 
-            ShowRoundEndScoreboard(text);
+            try
+            {
+                ShowRoundEndScoreboard(text);
+            }
+            catch (Exception e)
+            {
+                Log.Error($"Error while showing round end scoreboard: {e}");
+            }
+
+            try
+            {
+                SendRoundEndDiscordMessage();
+            }
+            catch (Exception e)
+            {
+                Log.Error($"Error while sending round end Discord message: {e}");
+            }
         }
 
         public void ShowRoundEndScoreboard(string text = "")
@@ -373,7 +384,7 @@ namespace Content.Server.GameTicking
                 var userId = mind.UserId ?? mind.OriginalOwnerUserId;
 
                 var connected = false;
-                var observer = HasComp<ObserverRoleComponent>(mindId);
+                var observer = _role.MindHasRole<ObserverRoleComponent>(mindId);
                 // Continuing
                 if (userId != null && _playerManager.ValidSessionId(userId.Value))
                 {
@@ -400,7 +411,7 @@ namespace Content.Server.GameTicking
                     _pvsOverride.AddGlobalOverride(GetNetEntity(entity.Value), recursive: true);
                 }
 
-                var roles = _roles.MindGetAllRoles(mindId);
+                var roles = _roles.MindGetAllRoleInfo(mindId);
 
                 var playerEndRoundInfo = new RoundEndMessageEvent.RoundEndPlayerInfo()
                 {
@@ -442,53 +453,9 @@ namespace Content.Server.GameTicking
 
             _replayRoundPlayerInfo = listOfPlayerInfoFinal;
             _replayRoundText = roundEndText;
-            var roundEndSummary = GenerateRoundEndSummary(gamemodeTitle, roundEndText, listOfPlayerInfoFinal);
-            SendRoundEndDiscordMessage(roundEndSummary);
         }
 
-        private string ConvertBBCodeToMarkdown(string text)
-        {
-            text = Regex.Replace(text, @"\[.*?\]", "**");
-
-            return text;
-        }
-
-        private string GenerateRoundEndSummary(string gamemodeTitle, string roundEndText, RoundEndMessageEvent.RoundEndPlayerInfo[] playerInfoArray)
-        {
-            var roundEndTextMarkdown = ConvertBBCodeToMarkdown(roundEndText);
-            var stringBuilder = new System.Text.StringBuilder();
-
-            stringBuilder.AppendLine($"**Режим**: {gamemodeTitle}\n");
-
-            if (!string.IsNullOrWhiteSpace(roundEndTextMarkdown))
-            {
-                stringBuilder.AppendLine($"**Информация**: {roundEndTextMarkdown}\n");
-            }
-
-            var groupedPlayers = playerInfoArray
-                .GroupBy(p => new { p.PlayerOOCName, p.PlayerICName })
-                .Select(g => new
-                {
-                    PlayerOOCName = g.Key.PlayerOOCName,
-                    PlayerICName = g.Key.PlayerICName,
-                    Roles = string.Join(", ", g.Select(p => p.Role).Distinct())
-                })
-                .ToList();
-
-            int totalPlayers = groupedPlayers.Count;
-
-            stringBuilder.AppendLine($"**Всего было игроков**: {totalPlayers}\n");
-            stringBuilder.AppendLine($"**Игроки**:\n");
-
-            foreach (var playerInfo in groupedPlayers)
-            {
-                stringBuilder.AppendLine($"*{playerInfo.PlayerOOCName}* '**{playerInfo.PlayerICName}**' в роли: {playerInfo.Roles}");
-            }
-
-            return stringBuilder.ToString();
-        }
-
-        private async void SendRoundEndDiscordMessage(string roundEndSummary)
+        private async void SendRoundEndDiscordMessage()
         {
             try
             {
@@ -496,10 +463,13 @@ namespace Content.Server.GameTicking
                     return;
 
                 var duration = RoundDuration();
-                var content = $"**Раунд {RoundId} завершен!**\n" +
-                              $"**Продолжительность**: {Math.Truncate(duration.TotalHours)} часов {duration.Minutes} минут {duration.Seconds} секунд\n" +
-                              $"{roundEndSummary}";
+                var content = Loc.GetString("discord-round-notifications-end",
+                    ("id", RoundId),
+                    ("hours", Math.Truncate(duration.TotalHours)),
+                    ("minutes", duration.Minutes),
+                    ("seconds", duration.Seconds));
                 var payload = new WebhookPayload { Content = content };
+
                 await _discord.CreateMessage(_webhookIdentifier.Value, payload);
 
                 if (DiscordRoundEndRole == null)

@@ -6,7 +6,7 @@
     - id: NoosphericZap
     - id: NoosphericFry
     - id: PsionicCatGotYourTongue
-    - id: MassMindSwap
+#    - id: MassMindSwap
     - id: GlimmerWispSpawn
     - id: FreeProberEarly
     - id: FreeProber
@@ -85,23 +85,6 @@
     - type: NoosphericStormRule
 
 - type: entity
-  id: BlobSpawn
-  parent: BaseGameRule
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: StationEvent
-    weight: 6.5
-    duration: 1
-    earliestStart: 50
-    minimumPlayers: 10
-    maxOccurrences: 1 # can only happen once per round
-  - type: BlobSpawnRule
-    carrierBlobProtos:
-    - SpawnPointGhostBlobRat
-    playersPerCarrierBlob: 30
-    maxCarrierBlob: 2
-
-- type: entity
   id: BluespaceGoat
   parent: BaseGameRule
   categories: [ HideSpawnMenu ]
@@ -156,16 +139,16 @@
       glimmerBurnUpper: 40
     - type: PsionicCatGotYourTongueRule
 
-- type: entity
-  id: MassMindSwap
-  parent: BaseGlimmerEvent
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: GlimmerEvent
-      minimumGlimmer: 400
-      glimmerBurnLower: 20
-      glimmerBurnUpper: 70
-    - type: MassMindSwapRule
+#- type: entity
+#  id: MassMindSwap
+#  parent: BaseGlimmerEvent
+#  categories: [ HideSpawnMenu ]
+#  components:
+#    - type: GlimmerEvent
+#      minimumGlimmer: 400
+#      glimmerBurnLower: 20
+#      glimmerBurnUpper: 70
+#    - type: MassMindSwapRule
 
 - type: entity
   id: GlimmerWispSpawn

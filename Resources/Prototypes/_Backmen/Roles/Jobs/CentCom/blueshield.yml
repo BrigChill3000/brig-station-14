@@ -2,7 +2,6 @@
   id: BlueShield
   name: job-name-blueshield
   description: job-description-blueshield
-  color: "#4682B4"
   playTimeTracker: JobBlueShield
   canBeAntag: false
   requireAdminNotify: true
@@ -61,4 +60,9 @@
     ears: ClothingHeadsetAltCommand
     shoes: ClothingShoesBootsJackBlueShieldFilled # Brig
     pocket1: WeaponPistolUCS
-    pocket2: CombatKnifeSpetsnaz
+    pocket2: RadioBlueShieldSupplyPod
+  storage:
+    back:
+    - BlueShieldLoadout
+    - BlueShieldSetMedical
+    - CombatKnifeSpetsnaz

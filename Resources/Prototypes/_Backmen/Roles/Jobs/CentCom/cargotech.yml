@@ -55,8 +55,8 @@
   parent: JobIcon
   id: JobIconCCCargoTech
   icon:
-    sprite: /Textures/Backmen/Icons/jobicon.rsi
-    state: CargoTechnician
+    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
+    state: gryzan
 
 
 - type: entity

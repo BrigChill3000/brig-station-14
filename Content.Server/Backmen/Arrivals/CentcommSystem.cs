@@ -16,8 +16,8 @@ using Content.Shared.Backmen.Abilities;
 using Content.Shared.Backmen.Arrivals;
 using Content.Shared.Cargo.Components;
 using Content.Shared.CCVar;
-using Content.Shared.Emag.Components;
-using Content.Shared.Emag.Systems;
+// using Content.Shared.Emag.Components;
+// using Content.Shared.Emag.Systems;
 using Content.Shared.GameTicking;
 using Content.Shared.Random;
 using Content.Shared.Random.Helpers;
@@ -75,7 +75,7 @@ public sealed class CentcommSystem : EntitySystem
         SubscribeLocalEvent<RoundStartingEvent>(OnCentComInit, before: new[] { typeof(EmergencyShuttleSystem) });
         SubscribeLocalEvent<RoundEndedEvent>(OnCentComEndRound);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnCleanup);
-        SubscribeLocalEvent<ShuttleConsoleComponent, GotEmaggedEvent>(OnShuttleConsoleEmaged);
+//        SubscribeLocalEvent<ShuttleConsoleComponent, GotEmaggedEvent>(OnShuttleConsoleEmaged);
         SubscribeLocalEvent<FTLCompletedEvent>(OnFTLCompleted);
         SubscribeLocalEvent<FtlCentComAnnounce>(OnFtlAnnounce);
         SubscribeLocalEvent<LoadingMapsEvent>(OnLoadingMaps);
@@ -172,7 +172,7 @@ public sealed class CentcommSystem : EntitySystem
 
     [ValidatePrototypeId<EntityPrototype>]
     private const string StationShuttleConsole = "ComputerShuttle";
-
+/*
     private void OnShuttleConsoleEmaged(Entity<ShuttleConsoleComponent> ent, ref GotEmaggedEvent args)
     {
         if (Prototype(ent)?.ID != StationShuttleConsole)
@@ -196,7 +196,7 @@ public sealed class CentcommSystem : EntitySystem
         EnsureComp<AllowFtlToCentComComponent>(shuttle.Value); // для обновления консоли нужно чтобы компонент был до вызыва RefreshShuttleConsoles
         _console.RefreshShuttleConsoles();
     }
-
+*/ 
     private void OnGridFillChange(bool obj)
     {
         if (obj)

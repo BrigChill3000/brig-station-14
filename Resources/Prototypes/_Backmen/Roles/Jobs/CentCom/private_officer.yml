@@ -50,6 +50,13 @@
   wageDepartment: CentCom
   wage: 75
 
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCPrivate
+  icon:
+    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
+    state: privat_officer
+
 - type: startingGear
   id: CentComPrivateOfficerGear
   equipment:

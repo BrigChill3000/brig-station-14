@@ -1,5 +1,5 @@
 - type: entity
-  id: BlueShieldSetLoadouts
+  id: BlueShieldLoadout
   name: Кейс Офицера СЩ
   description: Здесь лежит снаряжение которое подготовило для вас ДСО. Хотелось бы все самое лучшее.
   parent: BaseItem
@@ -10,10 +10,10 @@
   - type: Item
     size: Normal
   - type: ThiefUndeterminedBackpack
+    maxSelectedSets: 1
     possibleSets:
-    - Heal-Set1
-    - Heal-Set2
-    - Heal-Set3
+    - UTAPMk1Set
+    - ShotgunGuardian17Set
   - type: ActivatableUI
     key: enum.ThiefBackpackUIKey.Key
   - type: UserInterface

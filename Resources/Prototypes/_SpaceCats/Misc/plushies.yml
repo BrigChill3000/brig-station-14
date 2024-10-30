@@ -28,13 +28,13 @@
     state: plushie_tenchu
   - type: EmitSoundOnUse
     sound:
-      path: /Audio/Animals/cringe.ogg
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow1.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Animals/cringe.ogg
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow1.ogg
   - type: MeleeWeapon
     soundHit:
-      path: /Audio/Animals/cringe.ogg
+      path: /Audio/Nyanotrasen/Voice/Felinid/cat_meow1.ogg
 
 - type: entity
   parent: BasePlushie

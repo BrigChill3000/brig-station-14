@@ -594,6 +594,20 @@ BlueprintFlare: null
 # 2024-10-04
 BaseAdvancedPen: Pen
 
+# 2024-10-04 backmen
+GunSafeRifleLecter: GunSafeRifleAR18
+GunSafeSubMachineGunDrozd: GunSafeSubMachineGunVector
+GunSafeShotgunEnforcer: GunSafeShotgunShotgun39
+GunSafeShotgunKammerer: GunSafeShotgunTrenchgun
+GunSafeSubMachineGunWt550: GunSafeSubMachineGunMP5
+GunSafeLaserCarbine: GunSafeLaserCarbineUEG
+ShotGunCabinetFilled: ShotGunCabinetFilledBackmen
+ShotGunCabinetFilledOpen: ShotGunCabinetFilledOpenBackmen
+
+# 2024-10-05 - Corvax
+SheetPrinter: SheetPaper
+SheetPrinter1: SheetPaper1
+
 # 2024-10-07 Space Cats
 AirlockHydroponicsLocked: AirlockHydroGlassLocked
 AirlockHydroponics: AirlockHydroponicsGlass

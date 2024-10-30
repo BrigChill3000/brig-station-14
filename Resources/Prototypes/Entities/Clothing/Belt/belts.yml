@@ -277,9 +277,9 @@
         - PillCanister
         - Radio
         - DiscreteHealthAnalyzer
-        - SurgeryTool
         - Dropper
       components:
+        - SurgeryTool
         - Hypospray
         - Injector
         - Pill

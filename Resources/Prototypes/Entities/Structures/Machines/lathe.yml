@@ -200,11 +200,9 @@
       - WetFloorSign
       - ClothingHeadHatCone
       - FreezerElectronics
-      - Flare
   - type: EmagLatheRecipes
     emagStaticRecipes:
       - BoxLethalshot
-      - BoxShotgunFlare
       - BoxShotgunSlug
       - CombatKnife
       - CashMachineCircuitboard
@@ -360,7 +358,8 @@
       - FauxTileAstroSnow
       - OreBagOfHolding
       - DeviceQuantumSpinInverter
-      - EnergyDomeDirectionalTurtle # Cats energy_barrier
+      - EnergyDomeDirectionalTurtle # cats-shield energy_barrier
+      - HypoExperement # Cats
 # start-backmen: languages
       - CanilunztTranslator
       - BubblishTranslator
@@ -785,7 +784,6 @@
     runningState: icon
     staticRecipes:
       - BoxLethalshot
-      - BoxShotgunFlare
       - BoxShotgunPractice
       - BoxShotgunSlug
       - ClothingEyesHudSecurity
@@ -913,7 +911,6 @@
       runningState: icon
       staticRecipes:
         - BoxLethalshot
-        - BoxShotgunFlare
         - BoxShotgunSlug
         - BoxShellTranquilizer
         - MagazineBoxLightRifle
@@ -1250,8 +1247,6 @@
   - type: Machine
     board: BiogeneratorMachineCircuitboard
   - type: MaterialStorage
-    insertOnInteract: false
-    canEjectStoredMaterials: false
   - type: ProduceMaterialExtractor
   - type: ItemSlots
     slots:

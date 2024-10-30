@@ -21,3 +21,29 @@
     onlyAffectsMobs: false
   - type: UseDelay
     delay: 0.5
+
+- type: entity
+  name: гипоспрей эксперементальный
+  parent: HolyHypo
+  id: HypoExperement
+  description: Коммерческий гипоспрей, впервые разработанный компанией Nanotrasen Chemical Supply. Он имеет две встроенные функции безопасности для потребительского рынка - небольшой резервуар для химикатов и задержку впрыска.
+  components:
+  - type: Sprite
+    sprite: _SpaceCats/Objects/Specific/Medical/hypocivial.rsi
+    state: medivend_hypo
+  - type: Item
+    sprite: Objects/Specific/Medical/hypospray.rsi
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+  - type: Hypospray
+    onlyAffectsMobs: false
+  - type: UseDelay
+    delay: 1.1
+  - type: StaticPrice
+    price: 550

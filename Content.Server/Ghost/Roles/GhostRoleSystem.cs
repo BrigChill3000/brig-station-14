@@ -1,7 +1,6 @@
 using System.Linq;
 using Content.Server.Administration.Logs;
 using Content.Server.EUI;
-using Content.Server.Chat.Managers;
 using Content.Server.Ghost.Roles.Components;
 using Content.Server.Ghost.Roles.Events;
 using Content.Shared.Ghost.Roles.Raffles;
@@ -35,7 +34,6 @@ using Content.Shared.Verbs;
 using Robust.Shared.Collections;
 using Content.Shared.Ghost.Roles.Components;
 using Content.Shared.Roles.Jobs;
-using Content.Shared.Chat;
 
 namespace Content.Server.Ghost.Roles;
 
@@ -54,7 +52,6 @@ public sealed class GhostRoleSystem : EntitySystem
     [Dependency] private readonly IGameTiming _timing = default!;
     [Dependency] private readonly PopupSystem _popupSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
 
     [Dependency] private readonly Backmen.RoleWhitelist.WhitelistSystem _roleWhitelist = default!; // backmen: whitelist
 
@@ -76,18 +73,22 @@ public sealed class GhostRoleSystem : EntitySystem
 
         SubscribeLocalEvent<RoundRestartCleanupEvent>(Reset);
         SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
+
         SubscribeLocalEvent<GhostTakeoverAvailableComponent, MindAddedMessage>(OnMindAdded);
         SubscribeLocalEvent<GhostTakeoverAvailableComponent, MindRemovedMessage>(OnMindRemoved);
         SubscribeLocalEvent<GhostTakeoverAvailableComponent, MobStateChangedEvent>(OnMobStateChanged);
+        SubscribeLocalEvent<GhostTakeoverAvailableComponent, TakeGhostRoleEvent>(OnTakeoverTakeRole);
+
         SubscribeLocalEvent<GhostRoleComponent, MapInitEvent>(OnMapInit);
         SubscribeLocalEvent<GhostRoleComponent, ComponentStartup>(OnRoleStartup);
         SubscribeLocalEvent<GhostRoleComponent, ComponentShutdown>(OnRoleShutdown);
         SubscribeLocalEvent<GhostRoleComponent, EntityPausedEvent>(OnPaused);
         SubscribeLocalEvent<GhostRoleComponent, EntityUnpausedEvent>(OnUnpaused);
+
         SubscribeLocalEvent<GhostRoleRaffleComponent, ComponentInit>(OnRaffleInit);
         SubscribeLocalEvent<GhostRoleRaffleComponent, ComponentShutdown>(OnRaffleShutdown);
+
         SubscribeLocalEvent<GhostRoleMobSpawnerComponent, TakeGhostRoleEvent>(OnSpawnerTakeRole);
-        SubscribeLocalEvent<GhostTakeoverAvailableComponent, TakeGhostRoleEvent>(OnTakeoverTakeRole);
         SubscribeLocalEvent<GhostRoleMobSpawnerComponent, GetVerbsEvent<Verb>>(OnVerb);
         SubscribeLocalEvent<GhostRoleMobSpawnerComponent, GhostRoleRadioMessage>(OnGhostRoleRadioMessage);
         _playerManager.PlayerStatusChanged += PlayerStatusChanged;
@@ -408,8 +409,8 @@ public sealed class GhostRoleSystem : EntitySystem
         if (raffle.AllMembers.Add(player) && raffle.AllMembers.Count > 1
             && raffle.CumulativeTime.Add(raffle.JoinExtendsDurationBy) <= raffle.MaxDuration)
         {
-            raffle.Countdown += raffle.JoinExtendsDurationBy;
-            raffle.CumulativeTime += raffle.JoinExtendsDurationBy;
+                raffle.Countdown += raffle.JoinExtendsDurationBy;
+                raffle.CumulativeTime += raffle.JoinExtendsDurationBy;
         }
 
         UpdateAllEui();
@@ -519,14 +520,14 @@ public sealed class GhostRoleSystem : EntitySystem
 
         var newMind = _mindSystem.CreateMind(player.UserId,
             EntityManager.GetComponent<MetaDataComponent>(mob).EntityName);
-        _roleSystem.MindAddRole(newMind, new GhostRoleMarkerRoleComponent { Name = role.RoleName });
+
+        _roleSystem.MindAddRole(newMind, "MindRoleGhostMarker");
+
+        if(_roleSystem.MindHasRole<GhostRoleMarkerRoleComponent>(newMind!, out var markerRole))
+            markerRole.Value.Comp2.Name = role.RoleName;
+
         _mindSystem.SetUserId(newMind, player.UserId);
         _mindSystem.TransferTo(newMind, mob);
-
-        var message = Loc.GetString("ghost-role-greet", ("role", role.RoleName), ("rules", role.RoleRules));
-        var wrappedMessage = Loc.GetString("chat-manager-server-wrap-message", ("message", message));
-
-        _chatManager.ChatMessageToOne(ChatChannel.Server, message, wrappedMessage, default, false, player.Channel);
     }
 
     /// <summary>
@@ -617,10 +618,7 @@ public sealed class GhostRoleSystem : EntitySystem
 
         if (ghostRole.JobProto != null)
         {
-            if (HasComp<JobComponent>(args.Mind))
-                _roleSystem.MindRemoveRole<JobComponent>(args.Mind);
-
-            _roleSystem.MindAddRole(args.Mind, new JobComponent { Prototype = ghostRole.JobProto });
+            _roleSystem.MindAddJobRole(args.Mind, args.Mind, silent:false,ghostRole.JobProto);
         }
 
         ghostRole.Taken = true;

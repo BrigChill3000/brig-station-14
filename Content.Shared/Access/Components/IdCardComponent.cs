@@ -21,12 +21,12 @@ public sealed partial class IdCardComponent : Component
     [DataField]
     [AutoNetworkedField]
     [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWrite)]
-    public string? JobTitle;
+    public LocId? JobTitle;
 
-    [DataField("jobColor"), ViewVariables(VVAccess.ReadWrite)]
-    [AutoNetworkedField]
-    [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWrite)]
-    public Color JobColor { get; set; } = Color.FromHex("#FFFFFF");
+    private string? _jobTitle;
+
+    [Access(typeof(SharedIdCardSystem), typeof(SharedPdaSystem), typeof(SharedAgentIdCardSystem), Other = AccessPermissions.ReadWriteExecute)]
+    public string? LocalizedJobTitle { set => _jobTitle = value; get => _jobTitle ?? Loc.GetString(JobTitle ?? string.Empty); }
 
     /// <summary>
     /// The state of the job icon rsi.

@@ -603,6 +603,9 @@
   id: Enzyme
 
 - type: Tag
+  id: EnergySword
+
+- type: Tag
   id: ExplosivePassable
 
 - type: Tag
@@ -820,9 +823,6 @@
 
 - type: Tag
   id: Igniter
-
-- type: Tag
-  id: IgnoreMelee
   
 - type: Tag
   id: Ingredient
@@ -1006,10 +1006,16 @@
   id: NoBlockAnchoring
 
 - type: Tag
+  id: NoConsoleSound
+
+- type: Tag
   id: NozzleBackTank
 
 - type: Tag
   id: Nugget # for chicken nuggets
+
+- type: Tag
+  id: FakeNukeDisk
 
 - type: Tag
   id: NukeOpsUplink
@@ -1198,7 +1204,7 @@
 - type: Tag
   id: SecureWindoor
 
-- type: Tag  
+- type: Tag
   id: SecurityHelmet
 
 - type: Tag
@@ -1326,6 +1332,9 @@
 
 - type: Tag
   id: Syringe
+
+- type: Tag
+  id: SyringeGunAmmo
 
 - type: Tag
   id: Spellbook

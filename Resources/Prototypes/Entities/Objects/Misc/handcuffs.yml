@@ -18,6 +18,7 @@
     tags:
     - Handcuffs
   - type: MeleeWeapon
+    canBeBlocked: false # CATS EDIT
     wideAnimationRotation: 90
     resetOnHandSelected: false
     animation: WeaponArcDisarm

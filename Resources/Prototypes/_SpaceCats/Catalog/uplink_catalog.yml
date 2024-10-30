@@ -1,19 +1,4 @@
 - type: listing
-  id: UplinkEnergyDomeSyndie
-  name: uplink-energy-dome-name
-  description: uplink-energy-dome-desc
-  productEntity: EnergyDomeGeneratorPersonalSyndie
-  cost: 
-    Telecrystal: 10
-  categories:
-  - UplinkWearables
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
-
-- type: listing
   id: UplinkChemicalImplant
   name: uplink-stimulants-implant-name
   description: uplink-stimulants-implant-desc

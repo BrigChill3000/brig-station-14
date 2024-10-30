@@ -57,8 +57,8 @@
   parent: JobIcon
   id: JobIconCCHeadOfSecurity
   icon:
-    sprite: /Textures/Backmen/Icons/jobicon.rsi
-    state: Security
+    sprite: /Textures/_SpaceCats/Interface/Misc/centcom_icons.rsi
+    state: head_securety
 
 - type: startingGear
   id: HeadOfSecurityCentComGear
