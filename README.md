@@ -6,18 +6,18 @@
 
 <div align="center">
   
-  [![Discord](https://img.shields.io/discord/1203769510599856138?label=Join%20our%20Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/UEQDBC2TEj)
+  [![Discord](https://img.shields.io/discord/1203769510599856138?label=Join%20our%20Discord&logo=discord&logoColor=white&style=for-the-badge)](https://discord.gg/vYFHfrdQQC)
   [![Wiki](https://img.shields.io/badge/Wiki-Explore%20Our%20Wiki-blue?style=for-the-badge)](https://wiki.backmen.ru/)
   [![Steam](https://img.shields.io/badge/Steam-Play%20on%20Steam-blue?style=for-the-badge)](https://store.steampowered.com/app/1255460/Space_Station_14/)
   [![Client](https://img.shields.io/badge/Download-Client-blue?style=for-the-badge)](https://spacestation14.io/about/nightlies/)
-  [![GitHub](https://img.shields.io/github/stars/BrigChill3000/brig-station-14?style=for-the-badge&logo=github)](https://github.com/BrigChill3000/brig-station-14)
+  [![GitHub](https://img.shields.io/github/stars/fospas/space-cats-14?style=for-the-badge&logo=github)](https://github.com/fospas/Space-Cats-14)
 
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/github/commit-activity/y/BrigChill3000/brig-station-14?style=flat-square" alt="GitHub commit activity">
-  <img src="https://img.shields.io/github/issues/BrigChill3000/brig-station-14?style=flat-square" alt="GitHub Issues">
-  <img src="https://img.shields.io/github/issues-pr-closed/BrigChill3000/brig-station-14?style=flat-square" alt="GitHub Closed PRs">
+  <img src="https://img.shields.io/github/commit-activity/y/fospas/space-cats-14?style=flat-square" alt="GitHub commit activity">
+  <img src="https://img.shields.io/github/issues/fospas/space-cats-14?style=flat-square" alt="GitHub Issues">
+  <img src="https://img.shields.io/github/issues-pr-closed/fospas/space-cats-14?style=flat-square" alt="GitHub Closed PRs">
 </p>
 
 ---
@@ -49,7 +49,7 @@
 
 Проект невозможен без усилий всех участников. Вот те, кто внёс наибольший вклад:
 
-[![Участники](https://contrib.rocks/image?repo=BrigChill3000/brig-station-14)](https://github.com/space-exodus/space-station-14/graphs/contributors)
+[![Участники](https://contrib.rocks/image?repo=fospas/space-cats-14)](https://github.com/space-exodus/space-station-14/graphs/contributors)
 
 ---
 
